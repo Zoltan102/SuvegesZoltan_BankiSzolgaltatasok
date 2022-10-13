@@ -11,16 +11,16 @@ public abstract class Szamla {
         return aktualisEgyenleg;
     }
 
-    public void befizet(int osszeg){
+    public void befizet(int osszeg) {
         //TODO: befizet
     }
 
-    public boolean kivesz(int osszeg){
+    public boolean kivesz(int osszeg) {
         return true;
         //TODO: kivesz
     }
 
-    public Kartya ujKartya(String kartyaszam){
+    public Kartya ujKartya(String kartyaszam) {
         //TODO: ujKartya;
         return null;
     }
