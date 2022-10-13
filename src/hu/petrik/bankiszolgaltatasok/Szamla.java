@@ -1,6 +1,6 @@
 package hu.petrik.bankiszolgaltatasok;
 
-public class Szamla {
+public abstract class Szamla {
     protected int aktualisEgyenleg;
 
     public Szamla(int aktualisEgyenleg) {
@@ -20,5 +20,8 @@ public class Szamla {
         //TODO: kivesz
     }
 
-
+    public Kartya ujKartya(String kartyaszam){
+        //TODO: ujKartya;
+        return null;
+    }
 }
