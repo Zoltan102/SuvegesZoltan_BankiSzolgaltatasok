@@ -21,7 +21,6 @@ public abstract class Szamla extends BankiSzolgaltats {
     }
 
     public Kartya ujKartya(String kartyaszam) {
-        //TODO: ujKartya;
-        return null;
+        return new Kartya(getTulajdonos(), this, kartyaszam);
     }
 }
