@@ -13,12 +13,10 @@ public class HitelSzamla extends Szamla {
     }
 
     public boolean kivesz(int osszeg) {
-        boolean sikeresKivetel;
-        if (hitelKeret - osszeg + super.aktualisEgyenleg < 0) {
+        boolean sikeresKivetel = false;
+        if (hitelKeret - osszeg + super.aktualisEgyenleg >= 0) {
             super.kivesz(osszeg);
-            sikeresKivetel = false;
-        } else {
-            sikeresKivetel = false;
+            sikeresKivetel = true;
         }
         return sikeresKivetel;
     }
