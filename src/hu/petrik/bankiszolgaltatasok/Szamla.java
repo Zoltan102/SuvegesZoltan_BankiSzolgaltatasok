@@ -1,10 +1,10 @@
 package hu.petrik.bankiszolgaltatasok;
 
-public abstract class Szamla {
+public abstract class Szamla extends BankiSzolgaltats {
     protected int aktualisEgyenleg;
 
-    public Szamla(int aktualisEgyenleg) {
-        this.aktualisEgyenleg = aktualisEgyenleg;
+    public Szamla(Tulajdonos tulajdonos) {
+        super(tulajdonos);
     }
 
     public int getAktualisEgyenleg() {
@@ -12,11 +12,11 @@ public abstract class Szamla {
     }
 
     public void befizet(int osszeg) {
-        //TODO: befizet
+        aktualisEgyenleg += osszeg;
     }
 
     public boolean kivesz(int osszeg) {
-        return true;
+        return false;
         //TODO: kivesz
     }
 
