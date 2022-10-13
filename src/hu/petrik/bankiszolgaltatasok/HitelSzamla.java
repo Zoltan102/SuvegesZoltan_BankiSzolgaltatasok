@@ -14,8 +14,8 @@ public class HitelSzamla extends Szamla {
 
     public boolean kivesz(int osszeg) {
         boolean sikeresKivetel = false;
-        if (hitelKeret - osszeg + super.aktualisEgyenleg >= 0) {
-            super.kivesz(osszeg);
+        if (hitelKeret - osszeg + aktualisEgyenleg >= 0) {
+            aktualisEgyenleg -= osszeg;
             sikeresKivetel = true;
         }
         return sikeresKivetel;
