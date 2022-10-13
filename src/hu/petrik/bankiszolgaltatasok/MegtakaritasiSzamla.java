@@ -2,7 +2,7 @@ package hu.petrik.bankiszolgaltatasok;
 
 public class MegtakaritasiSzamla {
     private double kamat;
-    public double alapKamat;
+    public static final double alapKamat = 1.1;
 
     public MegtakaritasiSzamla(Tulajdonos tulajdonos) {
     }
