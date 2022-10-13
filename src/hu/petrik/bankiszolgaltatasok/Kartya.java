@@ -1,10 +1,11 @@
 package hu.petrik.bankiszolgaltatasok;
 
-public class Kartya {
+public class Kartya extends BankiSzolgaltats {
     private Szamla szamla;
     private String kartyaSzam;
 
     public Kartya(Tulajdonos tulajdonos, Szamla szamla, String kartyaSzam) {
+        super(tulajdonos);
         this.szamla = szamla;
         this.kartyaSzam = kartyaSzam;
     }
@@ -14,7 +15,10 @@ public class Kartya {
     }
 
     public boolean vasarlas(int osszeg) {
-        return true;
-        //TODO: vasarlas
+        boolean vasarlasSikeres = false;
+        if (szamla.kivesz(osszeg)) {
+            vasarlasSikeres = true;
+        }
+        return vasarlasSikeres;
     }
 }
