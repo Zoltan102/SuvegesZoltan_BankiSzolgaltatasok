@@ -6,9 +6,8 @@ import java.util.List;
 public class Bank {
     private List<Szamla> szamlaLista;
 
-    public Bank(List<Szamla> szamlaLista) {
+    public Bank() {
         this.szamlaLista = new ArrayList<>();
-        this.szamlaLista = szamlaLista;
     }
 
     public Szamla szamlaNyitas(Tulajdonos tulajdonos, int hitelKeret) {
